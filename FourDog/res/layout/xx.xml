@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="我的消息" />
+
+        <ImageView
+            android:id="@+id/xx_img_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_setting" />
+        <TextView
+            android:id="@+id/set_notive"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignTop="@+id/img_set"
+            android:layout_margin="0dip"
+            android:layout_toRightOf="@+id/img_set"
+            android:background="@drawable/notive"
+            android:padding="0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:gravity="center_vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:id="@+id/messageIcon"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/icon_messagex" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/messagetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="6.0dip"
+            android:layout_toRightOf="@id/messageIcon"
+            android:gravity="center_vertical"
+            android:text="消息"
+            android:textColor="#ff2d2d2d"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/lv_messageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="60.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/messageCount"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:background="@drawable/circlex"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ff2d2d2d"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/messageto"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15.0dip"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/res_cor4"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/notice"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:gravity="center_vertical"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:id="@+id/noticeIcon"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/icon_noticex" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noticetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="6.0dip"
+            android:layout_toRightOf="@id/noticeIcon"
+            android:gravity="center_vertical"
+            android:text="通知"
+            android:textColor="#ff2d2d2d"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/lv_noticeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/noticeCount"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:background="@drawable/circlex"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ff2d2d2d"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/noticeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15.0dip"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

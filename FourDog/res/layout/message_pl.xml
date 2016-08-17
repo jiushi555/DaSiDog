@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/res_cor1"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/bg_title_bar" >
+
+        <TextView
+            style="@style/txt_title"
+            android:text="回复" />
+
+        <ImageView
+            android:id="@+id/btnBack_message_fb"
+            style="@style/btn_back" />
+        <TextView
+            android:id="@+id/fb_btn"
+            style="@style/btn_right"
+            android:text="发布" />
+        
+    </RelativeLayout>
+    <EditText 
+        android:id="@+id/message_pl"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:padding="10dip"
+        android:hint="回复他..."
+        android:background="@null"
+        android:gravity="top"></EditText>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zc_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:gravity="center_horizontal"
+        android:text="点击图片设置头像"
+        android:textColor="@color/white"
+        android:textSize="20dip" />
+
+    <ImageView
+        android:id="@+id/tx_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_portrait" />
+
+ <TextView
+     android:id="@+id/pass"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_below="@+id/tx_img"
+     android:layout_marginTop="70dp"
+     android:gravity="center_horizontal"
+     android:text="跳过此步>>"
+     android:textColor="@color/res_cor3"
+     android:textSize="15dip" />
+
+</RelativeLayout>

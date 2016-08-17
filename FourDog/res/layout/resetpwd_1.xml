@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/bg_title_bar" >
+
+        <ImageView
+            android:id="@+id/ret_pwd1_back"
+            style="@style/btn_back" />
+
+        <TextView
+            style="@style/txt_title"
+            android:text="修改密码" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="22.0dip"
+        android:paddingRight="22.0dip" >
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26.0dip"
+            android:background="@drawable/bg_input"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_login_password" />
+
+            <EditText
+                android:id="@+id/oldetPassword"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="输入旧密码"
+                android:inputType="textPassword"
+                android:textSize="16.0sp" />
+
+            <RelativeLayout
+                android:id="@id/rlSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="6.0dip" >
+
+                <CheckBox
+                    android:id="@id/cbPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cb_password"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ret_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/text_title"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

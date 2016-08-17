@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    android:paddingBottom="8dip"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.xml.dasidog.MainActivity" >
+
+    <ImageView
+        android:id="@+id/welcome_id"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/welcome_id"
+        android:layout_toRightOf="@+id/welcome_id"
+        android:background="@null"
+        android:src="@drawable/logo_name" />
+
+        "
+
+</RelativeLayout>

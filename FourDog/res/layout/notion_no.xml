@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/res_cor1"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/bg_title_bar" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="系统通知" />
+
+        <ImageView
+            android:id="@+id/btnBack_notice"
+            style="@style/btn_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv_no_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/no_notice_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90.0dip"
+            android:src="@drawable/icon_no_notice" />
+
+        <TextView
+            android:id="@+id/no_notice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_notice_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"
+            android:text="暂时没有任何通知"
+            android:textColor="#ff9a9a9a"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_lump"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="考研" />
+        <ImageView
+            android:id="@+id/img_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_setting" />
+        <TextView
+            android:id="@+id/set_notive"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignTop="@+id/img_set"
+            android:layout_margin="0dip"
+            android:layout_toRightOf="@+id/img_set"
+            android:background="@drawable/notive"
+            android:padding="0dip"
+            android:visibility="gone" />
+        <ImageView 
+            android:id="@+id/ky_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/ic_add_bottom"></ImageView>
+    </RelativeLayout>
+    <!-- <ImageView
+        android:id="@+id/ky_writer"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/ic_add_bottom" /> -->
+    <ListView
+        android:id="@+id/ky_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:layout_below="@id/rlTitle" >
+    </ListView>
+
+</RelativeLayout>

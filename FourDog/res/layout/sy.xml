@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="首页" />
+
+        <ImageView
+            android:id="@+id/img_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_setting" />
+
+        <ImageView
+            android:id="@+id/writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/ic_add_bottom" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/set_notive"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignTop="@+id/img_set"
+            android:layout_margin="0dip"
+            android:layout_toRightOf="@+id/img_set"
+            android:background="@drawable/notive"
+            android:padding="0dip"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!--
+         <ImageView
+        android:id="@+id/writer"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/ic_add_bottom" />
+    -->
+
+    <ListView
+        android:id="@+id/sy_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:footerDividersEnabled="false"
+        android:divider="@color/divider_color"
+        android:dividerHeight="5dip"
+        android:layout_below="@id/rlTitle" >
+    </ListView>
+
+</RelativeLayout>

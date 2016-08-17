@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_lump"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/bg_title_bar"
+        android:layout_width="wrap_content" >
+
+        <TextView
+            android:id="@+id/gz_btn_left"
+            style="@style/text_left"
+            android:onClick="back"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/gz_publish"
+            style="@style/btn_right"
+            android:text="发表" />
+
+        <TextView
+            android:id="@+id/gz_tvTitle"
+            style="@style/txt_title"
+            android:text="发表动态" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/gz_publish_text"
+            android:hint="说点什么发布到工作社区..."
+            android:background="@drawable/edt_bg"
+            
+            style="@style/et_publish_text" />
+		<ImageView
+            android:id="@+id/gz_add_img"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:src="@drawable/btn_add_photo_nor" />
+        
+    </LinearLayout>
+
+    
+
+    
+
+    
+
+</LinearLayout>

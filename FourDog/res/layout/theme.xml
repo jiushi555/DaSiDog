@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="话题" />
+
+        <ImageView
+            android:id="@+id/theme_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_setting" />
+
+        <TextView
+            android:id="@+id/set_notive"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignTop="@+id/img_set"
+            android:layout_margin="0dip"
+            android:layout_toRightOf="@+id/img_set"
+            android:background="@drawable/notive"
+            android:padding="0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_cycle_viewpager_content"
+        android:name="com.example.theme.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:layout_below="@id/rlTitle" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_cycle_viewpager_content"
+        android:background="#E0E0E0"
+        android:padding="5dip"
+        android:text="#本周话题#"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/theme_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:dividerHeight="0dip" >
+    </ListView>
+
+</RelativeLayout>

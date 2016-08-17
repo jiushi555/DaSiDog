@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mg_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wdwt_layout_background"
+    android:orientation="vertical"
+    android:padding="0.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.5dip"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:padding="0.0dip" >
+
+            <ImageView
+                android:id="@+id/mg_tx"
+                android:layout_width="37.5dip"
+                android:layout_height="37.5dip"
+                android:src="@drawable/ic_portrait" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.5dip"
+                android:layout_marginTop="15.5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mg_writer_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                    android:textColor="#ff3c8ed4"
+                    android:textSize="15.0dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/mg_writer_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                    android:textColor="#ff3c8ed4"
+                    android:textSize="15.0dip" />
+                <TextView
+                    android:id="@+id/mg_nr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                	android:layout_toRightOf="@id/mg_writer_username"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                   	android:textColor="@color/black"
+                   	android:paddingBottom="5dip"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/mg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13.0dip"
+                    android:layout_below="@id/mg_writer_username"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="一小时前提问"
+                    android:textColor="@color/time_back_white"
+                    android:textSize="13.5dip" />
+
+               
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/adopt_icon"
+                android:layout_width="43.5dip"
+                android:layout_height="43.5dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/adopt_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mg_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wdwt_layout_background"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:layout_marginLeft="13.5dip" >
+
+            <TextView
+                android:id="@+id/mg_now"
+                android:layout_width="24.0dip"
+                android:layout_height="10.5dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9.0dip"
+                android:background="@drawable/lv_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="大四狗"
+                android:textColor="@color/white"
+                android:textSize="9.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48.0dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4.5dip"
+            android:background="@drawable/y_bg"
+            android:clipChildren="true"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <TextView
+                android:id="@+id/for_nr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="0.0dip"
+                android:paddingTop="5dip"
+                android:text="我就  及及就及基金就i及及一自己就是 我  一测我就是这样的"
+                android:textColor="#ff505050"
+                android:textSize="15sp" />
+             <TextView
+                    android:id="@+id/mg_where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            		android:layout_gravity="right"
+            		android:padding="3dip"
+            		android:layout_margin="5dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/lv_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="大四狗"
+                    android:textColor="@color/white"
+                    android:textSize="13.5dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#F0F0F0" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="39.5dip"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13.5dip"
+            android:clickable="true" >
+
+            <View
+                android:id="@+id/base"
+                android:layout_width="1.0dip"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pl_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dip"
+            android:textColor="#ff505050"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mg_txt_id"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/fengexian"
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="60.0dip" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_lump"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/btn_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="基本资料" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/reset_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20.0dip"
+        android:src="@drawable/ic_portrait" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:text="昵称"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/retUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2.0dip"
+            android:background="@null"
+            android:hint="填写昵称（必填）"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:text="状态"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/reset_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/reset_dsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="30dip"
+                android:background="@drawable/reset_dsg_selector"
+                android:button="@drawable/reset_dsg_selector"
+                android:gravity="center_horizontal" />
+
+            <RadioButton
+                android:id="@+id/reset_yby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/reset_yby_selector"
+                android:button="@drawable/reset_yby_selector"
+                android:gravity="center_horizontal" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/reset_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:text="修改"
+        android:layout_margin="20dip"
+        android:textColor="@color/text_title"
+        android:textSize="18.0sp" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/theme_title_bg1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t_theme_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14.0dip"
+        android:text="android"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:textColor="@color/white"
+        android:textSize="28.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginTop="7.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/t_theme_nr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="家公司"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:textColor="@color/white0.8"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/public_btn"
+            android:layout_width="120dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我要吐槽"
+            android:background="@color/white0.8"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

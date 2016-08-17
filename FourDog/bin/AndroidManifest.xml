@@ -1,0 +1,179 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.DasiDog"
+    android:versionCode="5"
+    android:versionName="2.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- ShareSDK -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:icon="@drawable/logo_main"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".Welcome"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.DasiDog.A" >
+        </activity>
+        <activity android:name="com.example.DasiDog.B" >
+        </activity>
+        <activity android:name="com.example.DasiDog.C" >
+        </activity>
+        <activity android:name=".Sy" >
+        </activity>
+        <activity android:name=".Gz" >
+        </activity>
+        <activity android:name=".Ky" >
+        </activity>
+        <activity android:name=".Xx" >
+        </activity>
+        <activity android:name=".Sy_Tab" >
+        </activity>
+        <activity android:name=".Login" >
+        </activity>
+        <activity android:name=".Zc_1" >
+        </activity>
+        <activity android:name=".Zc_2" >
+        </activity>
+        <activity android:name="com.example.set.Set" >
+        </activity>
+        <activity android:name="com.example.set.FeedBack" >
+        </activity>
+        <activity android:name="com.example.set.ResetPwd_1" >
+        </activity>
+        <activity android:name="com.example.set.ResetPwd_2" >
+        </activity>
+        <activity android:name="com.example.set.About_Us" >
+        </activity>
+        <activity android:name="com.example.add.Add_Sy" >
+        </activity>
+        <activity android:name="com.example.add.Add_Gz" >
+        </activity>
+        <activity android:name="com.example.add.Add_Ky" >
+        </activity>
+        <activity android:name="com.example.Sy.Sy" >
+        </activity>
+        <activity android:name="com.example.Gz.Gz" >
+        </activity>
+        <activity android:name="com.example.Ky.Ky" >
+        </activity>
+        <activity android:name="com.example.xx.Xx" >
+        </activity>
+        <activity android:name="com.example.theme.Theme" >
+        </activity>
+        <activity android:name="com.example.theme.ThemeContext">
+        </activity>
+        <activity android:name="com.example.theme.AddTheme">
+        </activity>
+        <activity
+            android:name="com.example.Sy.SyArticle"
+            android:theme="@style/article_title" >
+        </activity>
+        <activity
+            android:name="com.example.Gz.GzArticle"
+            android:theme="@style/article_title" >
+        </activity>
+        <activity
+            android:name="com.example.Ky.KyArticle"
+            android:theme="@style/article_title" >
+        </activity>
+        <activity android:name="com.example.tx.Tx_zc" >
+        </activity>
+        <activity android:name="com.example.me.Me_Dt" >
+        </activity>
+        <activity android:name="com.example.me.Me_Cy" >
+        </activity>
+        <activity android:name="com.example.me.Me_Main" >
+        </activity>
+        <activity android:name="com.example.me.Reset_Me" >
+        </activity>
+        <activity android:name="com.example.xx.Message" >
+        </activity>
+        <activity android:name="com.example.xx.Notion" >
+        </activity>
+        <activity android:name="com.example.xx.Message_pl" >
+        </activity>
+        <activity android:name="com.example.tx.CropImageActivity" >
+        </activity>
+        <activity android:name="com.example.guide.Guide" >
+        </activity>
+        <activity android:name="com.example.image.ImageX" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name=".yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/res_cor1"
+    android:orientation="vertical" >
+     <RelativeLayout style="@style/bg_title_bar" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="消息" />
+
+        <ImageView
+            android:id="@+id/btnBack_message"
+            style="@style/btn_back" />
+    </RelativeLayout>
+	<ListView
+	    android:id='@+id/msg_list'
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    
+	</ListView>
+</LinearLayout>

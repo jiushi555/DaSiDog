@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sy_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wdwt_layout_background"
+    android:orientation="vertical"
+    android:padding="0.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.5dip"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:padding="0.0dip" >
+
+            <ImageView
+                android:id="@+id/sy_tx"
+                android:layout_width="37.5dip"
+                android:layout_height="37.5dip"
+                android:src="@drawable/ic_portrait" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.0dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.5dip"
+                android:layout_marginTop="15.5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sy_writer_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                    android:textColor="#ff3c8ed4"
+                    android:textSize="15.0dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sy_writer_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="姚建勋"
+                    android:textColor="#ff3c8ed4"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/sy_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="一小时前提问"
+                    android:textColor="@color/time_back_white"
+                    android:textSize="13.5dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/adopt_icon"
+                android:layout_width="43.5dip"
+                android:layout_height="43.5dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/adopt_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sy_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wdwt_layout_background"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:layout_marginLeft="13.5dip" >
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="24.0dip"
+                android:layout_height="10.5dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9.0dip"
+                android:background="@drawable/lv_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="大四狗"
+                android:textColor="@color/white"
+                android:textSize="9.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="4.5dip"
+            android:background="@drawable/y_bg"
+            android:clipChildren="true"
+            android:orientation="vertical"
+            android:padding="0.0dip"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/sy_nr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:lineSpacingExtra="3.0dip"
+                android:paddingBottom="7dip"
+                android:paddingLeft="0.0dip"
+                android:paddingTop="7dip"
+                android:textColor="#ff505050"
+                android:textSize="16.5dip" />
+
+            <ImageView
+                android:id="@+id/nr_img"
+                android:layout_width="200dip"
+                android:layout_height="200dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:paddingBottom="15dip"
+                android:paddingTop="7dip"
+                android:src="@drawable/list_bg"
+                android:scaleType="fitStart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="39.5dip"
+        android:padding="0.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13.5dip"
+            android:clickable="true" >
+
+            <View
+                android:id="@+id/base"
+                android:layout_width="1.0dip"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/iv_no"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/base"
+                android:layout_marginTop="3.0dip"
+                android:src="@drawable/wdwt_sy_pl" />
+
+            <TextView
+                android:id="@+id/sy_pl_num_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_no"
+                android:gravity="center"
+                android:paddingLeft="1.5dip"
+                android:text="0"
+                android:textColor="#ff3c8ed4"
+                android:textSize="12.0dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sy_txt_id"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/fengexian"
+        style="@style/setting_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="60.0dip" />
+
+</LinearLayout>

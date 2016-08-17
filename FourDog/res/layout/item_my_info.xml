@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/bg_title_bar" >
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/btn_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_title"
+            android:text="个人资料" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/rlAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="8.0dip" >
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/me_tx"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_portrait" />
+
+            <ImageView
+                android:id="@+id/ivVip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivAvatar"
+                android:layout_alignRight="@id/ivAvatar"
+                android:src="@drawable/icon_vip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rlAvatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="24.0sp"
+                android:paddingTop="2.0dip"
+                android:singleLine="true"
+                android:text="Numan"
+                android:textColor="@color/text_title"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.0dip"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="4.0dip"
+                android:maxLines="2"
+                android:text="认证说明"
+                android:textColor="@color/text_hint"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:src="@drawable/icon_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llDynamic"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dtnum"
+                android:layout_width="80.0dip"
+                android:layout_height="20.0dip"
+                android:gravity="center"
+                android:lineSpacingExtra="28.0dip"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/text_title"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/dttxt"
+                android:layout_width="80.0dip"
+                android:layout_height="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="动态"
+                android:textColor="@color/text_hint"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMyAttention"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cynum"
+                android:layout_width="80.0dip"
+                android:layout_height="20.0dip"
+                android:gravity="center"
+                android:lineSpacingExtra="28.0dip"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/text_title"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/cytxt"
+                android:layout_width="80.0dip"
+                android:layout_height="20.0dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="参与"
+                android:textColor="@color/text_hint"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip"
+        android:background="@color/color_lump" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/me_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
